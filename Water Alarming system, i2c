@@ -1,0 +1,7 @@
+from smbus import SMBus
+
+addr = 0X5
+bus = SMBus(1)
+bus.write_byte(addr, 0x1)
+input("Press return to exit")
+bus.write_byte(addr, 0x0)
